@@ -1,0 +1,66 @@
+@import url('https://fonts.googleapis.com/css2?family=Kanit:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Merriweather:ital,wght@0,300;0,400;0,700;0,900;1,300;1,400;1,700;1,900&display=swap');
+
+body {
+  font-family: "Kanit", sans-serif;
+  font-weight: 500;
+  font-style: normal;
+  margin: 0;
+  height: 97vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: #f0f0f0; /* Cor de fundo da página */
+}
+
+header {
+  width: 100%;
+  background-color: #ffffff; /* Cor de fundo branca */
+  border-bottom: 2px solid #00ff00; /* Linha verde na parte inferior */
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.80);
+}
+
+form{
+  width: 400px; /* Largura do retângulo */
+  padding: 20px; /* Espaçamento interno */
+  background-color: #ffffff; /* Fundo branco */
+  text-align: center; /* Centraliza o conteúdo */
+  border: 1px solid #1fbb0a; /* Borda cinza */
+  border-radius: 10%;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.80); /* Sombra cinza */
+}
+
+h2{
+  padding-top: 8vh;
+}
+
+form input[type="text"],
+form input[type="email"],
+form input[type="number"],
+form input[type="checkbox"] {
+  width: calc(100% - 20px); /* Ajusta a largura do input */
+  padding: 10px; /* Espaçamento interno */
+  margin-bottom: 10px; /* Espaçamento entre os campos */
+  border: 1px solid #ccc; /* Borda cinza */
+  border-radius: 4px; /* Borda arredondada */
+  box-sizing: border-box; /* Inclui padding na largura total */
+}
+
+form input[type="submit"] {
+  background-color: #4CAF50; /* Cor de fundo verde */
+  color: white; /* Cor do texto branco */
+  border: none; /* Remove a borda padrão */
+  padding: 12px 20px; /* Espaçamento interno */
+  text-align: center; /* Centraliza o texto */
+  text-decoration: none; /* Remove sublinhado padrão */
+  display: inline-block; /* Mostra como bloco em linha */
+  font-size: 16px; /* Tamanho da fonte */
+  margin-top: 10px; /* Espaçamento acima do botão */
+  cursor: pointer; /* Altera o cursor ao passar por cima */
+  border-radius: 4px; /* Borda arredondada */
+  box-sizing: border-box; /* Inclui padding na largura total */
+}
+
+form input[type="submit"]:hover {
+  background-color: #45a049; /* Cor de fundo verde escura ao passar o mouse */
+}

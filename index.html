@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulário HTML</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<header>
+</header>
+<body>
+    <h2>Formulário de Cadastro</h2>
+    <form action="/submit-form" method="post" id="container">
+        <label for="nome">Nome:</label><br>
+        <input type="text" id="nome" name="nome" required><br><br>
+        
+        <label for="email">Email:</label><br>
+        <input type="email" id="email" name="email" required><br><br>
+        
+        <label for="numero">Número:</label><br>
+        <input type="number" id="numero" name="numero" required><br><br>
+
+        <p>Escolha uma ou mais opções de contato:</p>
+        <input type="checkbox" id="contato-whatsapp" name="contato[]" value="whatsapp">
+        <label for="contato-whatsapp">WhatsApp</label><br>
+        <input type="checkbox" id="contato-email" name="contato[]" value="email">
+        <label for="contato-email">Email</label><br><br>
+        
+        <input type="submit" value="Enviar">
+    </form>
+</body>
+</html>
