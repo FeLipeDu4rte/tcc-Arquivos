@@ -10,14 +10,14 @@ body {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  background-color: #f0f0f0; /* Cor de fundo da página */
+  background-color: #ffffff; /* Cor de fundo da página */
 }
 
 header {
   width: 100%;
   background-color: #ffffff; /* Cor de fundo branca */
-  border-bottom: 2px solid #00ff00; /* Linha verde na parte inferior */
-  box-shadow: 0 0 10px rgba(0, 0, 0, 0.80);
+  border-bottom: 2px solid #45a049; /* Linha verde na parte inferior */
+  box-shadow: 0 0 10px rgba(85, 85, 85, 0.842);
 }
 
 form{
@@ -27,7 +27,7 @@ form{
   text-align: center; /* Centraliza o conteúdo */
   border: 1px solid #1fbb0a; /* Borda cinza */
   border-radius: 10%;
-  box-shadow: 0 0 10px rgba(0, 0, 0, 0.80); /* Sombra cinza */
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.5); /* Sombra cinza */
 }
 
 h2{
@@ -37,7 +37,7 @@ h2{
 form input[type="text"],
 form input[type="email"],
 form input[type="number"],
-form input[type="checkbox"] {
+form input[type="radio"] {
   width: calc(100% - 20px); /* Ajusta a largura do input */
   padding: 10px; /* Espaçamento interno */
   margin-bottom: 10px; /* Espaçamento entre os campos */
@@ -47,14 +47,14 @@ form input[type="checkbox"] {
 }
 
 form input[type="submit"] {
-  background-color: #4CAF50; /* Cor de fundo verde */
+  background-color: #45a049; /* Cor de fundo verde */
   color: white; /* Cor do texto branco */
   border: none; /* Remove a borda padrão */
   padding: 12px 20px; /* Espaçamento interno */
   text-align: center; /* Centraliza o texto */
   text-decoration: none; /* Remove sublinhado padrão */
-  display: inline-block; /* Mostra como bloco em linha */
-  font-size: 16px; /* Tamanho da fonte */
+  display: inline-block; /* Mostra como bloco em linha */ 
+  font-size: 20px;/* Tamanho da fonte */
   margin-top: 10px; /* Espaçamento acima do botão */
   cursor: pointer; /* Altera o cursor ao passar por cima */
   border-radius: 4px; /* Borda arredondada */

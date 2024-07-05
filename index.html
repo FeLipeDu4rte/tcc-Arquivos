@@ -10,7 +10,7 @@
 </header>
 <body>
     <h2>Formulário de Cadastro</h2>
-    <form action="/submit-form" method="post" id="container">
+    <form action="includes/index.php" method="post" id="container">
         <label for="nome">Nome:</label><br>
         <input type="text" id="nome" name="nome" required><br><br>
         
@@ -21,10 +21,12 @@
         <input type="number" id="numero" name="numero" required><br><br>
 
         <p>Escolha uma ou mais opções de contato:</p>
-        <input type="checkbox" id="contato-whatsapp" name="contato[]" value="whatsapp">
+        <input type="radio" id="contato-whatsapp" name="contato" value="whatsapp">
         <label for="contato-whatsapp">WhatsApp</label><br>
-        <input type="checkbox" id="contato-email" name="contato[]" value="email">
+        <input type="radio" id="contato-email" name="contato" value="email">
         <label for="contato-email">Email</label><br><br>
+        <input type="radio" id="contato-ambas" name="contato" value="ambas">
+        <label for="contato-ambas">ambas opções</label><br><br>
         
         <input type="submit" value="Enviar">
     </form>
