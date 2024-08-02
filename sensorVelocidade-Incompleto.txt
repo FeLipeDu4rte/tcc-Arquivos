@@ -1,0 +1,44 @@
+//Pino ligado ao pino D0 do sensor
+int pinoentrada = 2;
+int rpm;
+
+float ms;
+float pi=3.1415;
+float convert = 3.6;
+float kmh;
+
+void contador()
+{
+  //Incrementa contador
+  pulsos++;
+}
+
+void setup()
+{
+//Pino do sensor como entrada
+  pinMode(pinoentrada, INPUT);
+  //Interrupcao 0 - pino digital 2
+  //A cada pulso, aciona o contador
+attachInterrupt(0, contador, FALLING);
+  pulsos = 0;
+  rpm = 0;
+  millis_old = 0;
+}
+
+void loop()
+{
+  //Atualiza contador a cada 1000 milisegundos, ou seja, 1 segundo
+  if (millis() - millis_old >= 1000)
+  {
+    //Desabilita interrupcao enquanto faz o calculo
+    detachInterrupt(0);
+    rpm = (60 * 1000 / pulsos_por_volta ) / (millis() - millis_old) * pulsos;
+    millis_old = millis();
+    pulsos = 0;
+    kmh=ms*convert;
+    ms = (2*pi*0.01*rpm)/60;
+
+    //Habilita interrupcao
+    attachInterrupt(0, contador, FALLING);
+  }
+}
