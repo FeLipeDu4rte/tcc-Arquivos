@@ -1,0 +1,19 @@
+#include <Wire.h>
+#include "DFRobot_SHT20.h"
+
+DFRobot_SHT20 sht20;
+
+voide setup(){
+Serial.begin(9600);
+Serial.println("Exemplo SHT20");
+sht20.initSHT20();
+}
+
+void loop()
+{
+// Variável da umidade
+float umd = sht20.readHumidity();
+
+// Variável de temperatura 
+float temp = sht20.readTemperature();
+}
